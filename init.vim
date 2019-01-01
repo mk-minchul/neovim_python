@@ -283,6 +283,14 @@ let g:deoplete#enable_smart_case = 1
 let g:context_filetype#same_filetypes = {}
 let g:context_filetype#same_filetypes._ = '_'
 
+" tab behavior to rotate selection
+inoremap <silent> <CR> <C-r>=<SID>my_cr_function()<CR>
+function! s:my_cr_function()
+    return (pumvisible() ? "\<C-y>" : "" ) . "\<CR>"
+endfunction
+inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
+
+
 " Jedi-vim ------------------------------
 
 " Disable autocompletion (using deoplete instead)
