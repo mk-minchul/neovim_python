@@ -21,12 +21,12 @@ RUN echo "alias pip3='python3.6 -m pip'" >> ~/.bash_aliases
 # install nvim related packages for python
 RUN python3.6 -m pip install neovim pep8 flake8 pyflakes pylint isort
 
-# clean up
-RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
-
 # setup nvimrc
 RUN curl -fLo /root/.config/nvim/init.vim --create-dirs https://raw.githubusercontent.com/mk-minchul/neovim_python/master/init.vim
 
 # install packages for nvimrc
 RUN timeout 5m nvim || true
+
+# clean up
+RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
