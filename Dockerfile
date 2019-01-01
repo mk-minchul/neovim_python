@@ -1,5 +1,3 @@
-# docker build -f neovim_python36 -t mckim/neovim_python36_001 .
-
 FROM ubuntu:16.04
 
 RUN apt-get update && apt-get install -y software-properties-common
