@@ -382,3 +382,5 @@ let g:airline#extensions#tagbar#flags = 'f'  " show full tag hierarchy
 "set termguicolors
 "let ayucolor="mirage"   " for dark version of theme
 
+au FileType python map <silent> <leader>b oimport pudb; pudb.set_trace()<esc>
+au FileType python map <silent> <leader>B Oimport pudb; pudb.set_trace()<esc>
