@@ -60,7 +60,8 @@ Plug 'fisadev/fisa-vim-colorscheme'
 Plug 'freeo/vim-kalisi'
 Plug 'danilo-augusto/vim-afterglow'
 Plug 'ayu-theme/ayu-vim'
-Plug 'sonph/onehalf', {'rtp': 'vim/'}
+"Plug 'sonph/onehalf', {'rtp': 'vim/'}
+Plug 'mk-minchul/neovim_python'
 
 " Airline
 Plug 'vim-airline/vim-airline'
