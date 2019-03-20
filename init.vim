@@ -60,6 +60,7 @@ Plug 'fisadev/fisa-vim-colorscheme'
 Plug 'freeo/vim-kalisi'
 Plug 'danilo-augusto/vim-afterglow'
 Plug 'ayu-theme/ayu-vim'
+Plug 'sonph/onehalf', {'rtp': 'vim/'}
 
 " Airline
 Plug 'vim-airline/vim-airline'
@@ -173,9 +174,10 @@ set fillchars+=vert:\
 " use 256 colors when possible
 if (&term =~? 'mlterm\|xterm\|xterm-256\|screen-256') || has('nvim')
 	let &t_Co = 256 
-    colorscheme ayu
+    "colorscheme ayu
+    colorscheme onehalfdark
     "colorscheme afterglow
-    " colorscheme fisa
+    "colorscheme fisa
 else
     colorscheme delek
 endif
@@ -376,5 +378,5 @@ let g:airline#extensions#whitespace#enabled = 0
 "let g:airline_symbols.linenr = '⭡'
 
 "set termguicolors
-let ayucolor="mirage"   " for dark version of theme
+"let ayucolor="mirage"   " for dark version of theme
 
