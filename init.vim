@@ -56,6 +56,11 @@ Plug 'vim-scripts/IndexedSearch'
 " Terminal Vim with 256 colors colorscheme
 Plug 'fisadev/fisa-vim-colorscheme'
 
+" Other color schemes
+Plug 'freeo/vim-kalisi'
+Plug 'danilo-augusto/vim-afterglow'
+Plug 'ayu-theme/ayu-vim'
+
 " Airline
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -81,8 +86,7 @@ Plug 'zchee/deoplete-jedi', { 'do': ':UpdateRemotePlugins' }
 Plug 'davidhalter/jedi-vim'
 
 " Automatically close parenthesis, etc
-" Plug 'Townk/vim-autoclose'
-Plug 'jiangmiao/auto-pairs'
+Plug 'Townk/vim-autoclose'
 
 " Surround
 Plug 'tpope/vim-surround'
@@ -168,8 +172,10 @@ set fillchars+=vert:\
 
 " use 256 colors when possible
 if (&term =~? 'mlterm\|xterm\|xterm-256\|screen-256') || has('nvim')
-	let &t_Co = 256
-    colorscheme fisa
+	let &t_Co = 256 
+    colorscheme ayu
+    "colorscheme afterglow
+    " colorscheme fisa
 else
     colorscheme delek
 endif
@@ -368,3 +374,7 @@ let g:airline#extensions#whitespace#enabled = 0
 "let g:airline_symbols.branch = '⭠'
 "let g:airline_symbols.readonly = '⭤'
 "let g:airline_symbols.linenr = '⭡'
+
+"set termguicolors
+let ayucolor="mirage"   " for dark version of theme
+
