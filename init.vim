@@ -300,6 +300,8 @@ function! s:my_cr_function()
     return (pumvisible() ? "\<C-y>" : "" ) . "\<CR>"
 endfunction
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
+" do not make new line after selecting a suggestion with enter
+inoremap <expr> <CR> pumvisible() ? "\<C-Y>" : "\<CR>"
 
 
 " Jedi-vim ------------------------------
