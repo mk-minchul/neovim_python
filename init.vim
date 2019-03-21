@@ -88,7 +88,8 @@ Plug 'zchee/deoplete-jedi', { 'do': ':UpdateRemotePlugins' }
 Plug 'davidhalter/jedi-vim'
 
 " Automatically close parenthesis, etc
-Plug 'Townk/vim-autoclose'
+" Plug 'Townk/vim-autoclose'
+Plug 'jiangmiao/auto-pairs'
 
 " Surround
 Plug 'tpope/vim-surround'
