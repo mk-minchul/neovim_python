@@ -144,6 +144,8 @@ Plug 'neomake/neomake'
 " to avoid that)
 Plug 'myusuf3/numbers.vim'
 
+" multi line cursor C-n C-x C-p and I works
+Plug 'terryma/vim-multiple-cursors'
 
 
 " Tell vim-plug we finished declaring plugins, so it can load them
