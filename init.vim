@@ -406,5 +406,3 @@ set whichwrap+=<,>,h,l,[,]
 
 " folding method
 nnoremap <Space> za
-let g:SimpylFold_docstring_preview = 1
-let g:SimpylFold_fold_docstring = 0
