@@ -391,5 +391,9 @@ au FileType python map <silent> <leader>b oimport pudb; pudb.set_trace()<esc>
 
 " change the cursor to bar
 set guicursor=a:ver25-blinkon10
-
+" use mouse
 set mouse=a
+
+" insert line in no insert mode
+nnoremap o o<Esc>
+nnoremap O O<Esc>
