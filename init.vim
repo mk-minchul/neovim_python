@@ -407,3 +407,4 @@ set whichwrap+=<,>,h,l,[,]
 " folding method
 nnoremap <Space> za
 set foldnestmax=2
+set foldmethod=indent
