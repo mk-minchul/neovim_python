@@ -147,6 +147,9 @@ Plug 'myusuf3/numbers.vim'
 " multi line cursor C-n C-x C-p and I works
 Plug 'terryma/vim-multiple-cursors'
 
+" Folding for python
+Plug 'tmhedberg/SimpylFold'
+
 
 " Tell vim-plug we finished declaring plugins, so it can load them
 call plug#end()
@@ -402,6 +405,6 @@ nnoremap O O<Esc>
 set whichwrap+=<,>,h,l,[,]
 
 " folding method
-set foldmethod=indent
 nnoremap <Space> za
-
+let g:SimpylFold_docstring_preview = 1
+let g:SimpylFold_fold_docstring = 0
