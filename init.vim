@@ -401,3 +401,7 @@ nnoremap O O<Esc>
 " move to the next line on end of the line
 set whichwrap+=<,>,h,l,[,]
 
+" folding method
+set foldmethod=indent
+nnoremap <Space> za
+
