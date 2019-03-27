@@ -397,3 +397,7 @@ set mouse=a
 " insert line in no insert mode
 nnoremap o o<Esc>
 nnoremap O O<Esc>
+
+" move to the next line on end of the line
+set whichwrap+=<,>,h,l,[,]
+
