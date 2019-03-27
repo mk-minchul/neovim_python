@@ -148,7 +148,7 @@ Plug 'myusuf3/numbers.vim'
 Plug 'terryma/vim-multiple-cursors'
 
 " Folding for python
-Plug 'tmhedberg/SimpylFold'
+" Plug 'tmhedberg/SimpylFold'
 
 
 " Tell vim-plug we finished declaring plugins, so it can load them
@@ -406,3 +406,4 @@ set whichwrap+=<,>,h,l,[,]
 
 " folding method
 nnoremap <Space> za
+set foldnestmax=2
