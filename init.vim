@@ -391,3 +391,5 @@ au FileType python map <silent> <leader>b oimport pudb; pudb.set_trace()<esc>
 
 " change the cursor to bar
 set guicursor=a:ver25-blinkon10
+
+set mouse=a
