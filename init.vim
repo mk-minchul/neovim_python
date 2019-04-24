@@ -409,3 +409,6 @@ set whichwrap+=<,>,h,l,[,]
 nnoremap <Space> za
 set foldnestmax=2
 set foldmethod=indent
+
+" press esc to exit the autocomplete box
+inoremap <expr> <Esc>      pumvisible() ? "\<C-e>" : "\<Esc>"
