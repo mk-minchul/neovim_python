@@ -412,3 +412,8 @@ set foldmethod=indent
 
 " press esc to exit the autocomplete box
 inoremap <expr> <Esc>      pumvisible() ? "\<C-e>" : "\<Esc>"
+
+" remap down and up half a page
+nnoremap <M-k> <C-u>
+nnoremap <M-j> <C-d>
+
