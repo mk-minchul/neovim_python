@@ -255,9 +255,12 @@ autocmd! BufWritePost * Neomake
 " Check code as python3 by default
 let g:neomake_python_python_maker = neomake#makers#ft#python#python()
 let g:neomake_python_flake8_maker = neomake#makers#ft#python#flake8()
-let g:neomake_python_python_maker.exe = 'python3.6 -m py_compile'
-let g:neomake_python_flake8_maker.exe = 'python3.6 -m flake8'
-let g:python3_host_prog = '/usr/bin/python3.6'
+let g:neomake_python_python_maker.exe = 'python -m py_compile'
+let g:neomake_python_flake8_maker.exe = 'python -m flake8'
+let g:python3_host_prog = '/opt/conda/bin/python'
+" let g:neomake_python_python_maker.exe = 'python3.6 -m py_compile'
+" let g:neomake_python_flake8_maker.exe = 'python3.6 -m flake8'
+" let g:python3_host_prog = '/usr/bin/python3.6'
 
 " Fzf ------------------------------
 
