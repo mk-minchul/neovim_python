@@ -29,5 +29,4 @@ source $HOME/.bash_aliases
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-alias sudo='sudo env PATH=$PATH'
 
