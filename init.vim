@@ -46,8 +46,15 @@ Plug 'michaeljsmith/vim-indent-object' " select all text in same indentation lev
 
 Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
 
+Plug 'mxw/vim-jsx'
+Plug 'pangloss/vim-javascript'
+Plug 'dikiaap/minimalist'
 
 call plug#end()
+
+" jsx theme
+colorscheme minimalist
+
 
 " python setting
 let g:python_host_prog = '/Users/mckim/.pyenv/versions/py2/bin/python'
