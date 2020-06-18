@@ -13,6 +13,7 @@ sudo pip install pynvim
 sudo npm i -g neovim
 sudo apt install xsel
 
+# pip install pynvim rope jedi pylint --upgrade
 
 sudo pip install jedi --upgrade
 sudo pip install rope
