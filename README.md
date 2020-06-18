@@ -17,6 +17,7 @@ sudo apt install xsel
 sudo pip install jedi --upgrade
 sudo pip install rope
 
+sudo npm i -g bash-language-server
 
 # install Plug
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
@@ -28,3 +29,6 @@ alias vi="nvim"
 
 # within nvim
 :CocInstall coc-python
+
+# copy coc-settings.json to ~/.config/nvim/
+# copy init.vim to ~/.config/nvim/
