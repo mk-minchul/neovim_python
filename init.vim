@@ -97,4 +97,4 @@ autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in
 
 nnoremap <leader>q :wincmd q<CR>
 
-
+nnoremap gr :tabprev<CR>
