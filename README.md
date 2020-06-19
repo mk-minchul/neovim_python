@@ -16,7 +16,7 @@ sudo apt install xsel
 # pip install pynvim rope jedi pylint --upgrade
 
 sudo pip install jedi --upgrade
-sudo pip install rope
+sudo pip install rope pylint
 
 sudo npm i -g bash-language-server
 
