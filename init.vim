@@ -1,7 +1,7 @@
 syntax on
 set noshowmatch
 set relativenumber
-set nohlsearch
+set hlsearch
 set hidden
 set noerrorbells
 set expandtab
@@ -31,7 +31,7 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'preservim/nerdtree'
 Plug 'sheerun/vim-polyglot'
 call plug#end()
-colorscheme gruvbox
+silent! colorscheme gruvbox
 let g:gruvbox_contrast_dark = 'hard'
 if exists('+termguicolors')
     let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
@@ -99,3 +99,6 @@ nnoremap <leader>q :wincmd q<CR>
 
 nnoremap gr :tabprev<CR>
 nnoremap ge :tabclose<CR>
+nnoremap J 3j<CR>
+nnoremap K 3k<CR>
+nnoremap <leader>3 :nohlsearch<CR>
