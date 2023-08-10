@@ -30,4 +30,5 @@ source $HOME/.bash_aliases
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-
+export PATH="$HOME/.local/bin:$PATH"
+alias gr="git fetch --all && git reset --hard origin"
